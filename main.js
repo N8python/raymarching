@@ -157,7 +157,7 @@ Shifter[9] shifters = Shifter[9](
         vec3 obj_color = vec3(1.0);
         int s = 0;
         float minDist = 10000.0;
-        for(int r= 0; r <= shifters.length(); r++) {
+        for(int r= 0; r < shifters.length(); r++) {
             float dist = length(p - shifters[r].position); 
             if (dist < minDist) {
                 s = r;
