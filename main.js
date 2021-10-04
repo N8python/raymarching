@@ -84,7 +84,7 @@ float noise(vec2 uv)
                mix(lt, rt, f.x), f.y);
 }
 
-#define OCTAVES 8
+const int OCTAVES = 8;
 float fbm(vec2 uv)
 {
     float value = 0.;
